@@ -3,7 +3,7 @@ shotcanvas
 
 Puredata plugin. This plugin is designed to use a PNG image as background of a pd patch. You can also create a PNG snapshot of your patch.
 
-plugin features and uses
+Plugin features and uses
 -----------------
 - CREATE PNG (export png)
 - CREATE BACKGROUND (import png)
@@ -39,7 +39,7 @@ The image will be loaded only under these conditions:
 - Its name must be **identical to the pd file name (except in the extension)**
 - The image file must be in the **(your_home_dir)/Pd/img/** folder (you can change this..)
 
-install
+Install
 -------
 
 Copy **shotcanvas-plugin.tcl** and **shotcanvas-svgcontainer.tcl** to (your home directory)/pd-externals.
@@ -53,9 +53,9 @@ Author
 -----
 Lazzaro Nicolò Ciccolellla
 
-license
+License
 -------
-**shotcanvas** is *open source software*, see: [LICENSE](LICENSE)
+*shotcanvas* is *open source software*, see: [LICENSE](LICENSE)
 
 >Have fan
 
