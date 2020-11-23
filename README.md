@@ -52,9 +52,13 @@ basically:
 Author
 -----
 Lazzaro Nicolò Ciccolellla
+
+license
+-------
 **shotcanvas** is *open source software*, see: [LICENSE](LICENSE)
+
 >Have fan
 
 Reference:
-- [puredata](https://puredata.info/)
-- [puredata plugin docs](https://puredata.info/docs/guiplugins/)
+----------
+[puredata](https://puredata.info/)
