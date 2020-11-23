@@ -45,7 +45,7 @@ The image will be loaded only under these conditions:
 Install
 -------
 
-Copy **[shotcanvas-plugin.tcl](shotcanvas-plugin.tcl)** and **[shotcanvas-svgcontainer.tcl]** to (your home directory)/pd-externals.
+Copy [shotcanvas-plugin.tcl](shotcanvas-plugin.tcl) and [shotcanvas-svgcontainer.tcl](shotcanvas-svgcontainer.tcl) to <your home directory>/pd-externals.
 > this may change so refer to the PD documentation.
 
 basically:
@@ -64,4 +64,5 @@ License
 
 Reference:
 ----------
-[puredata](https://puredata.info/) | [Tcl Tk](https://www.tcl.tk/)
+- [puredata](https://puredata.info/)
+- [Tcl Tk](https://www.tcl.tk/)
