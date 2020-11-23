@@ -16,19 +16,19 @@ Plugin features and uses
 
 CREATE PNG (*export PNG*)
 -------------------------
-> Create png with all the content of a focused patchwindow (only the canvas, not the frame) 
+> Create a **PNG** screnshot of a focused patchwindow (only the canvas, not the frame) 
 
-Shotcanvas places a menu item (**shotcanvas**) in the main pd menu (it is active only in patchwindows).
-Clicking on "shotcanvas" you export an image (**png**) of the patch with everything are on it, objects, wires etc. as it appears to your eyes  (the patch can be in edit mode or not).
+Installing shotcanvas a menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
+Clicking on "shotcanvas" you export a (**png**) image of the patch with everything are on it, objects, wires etc. as it appears to your eyes  (the patch can be in edit mode or not).
 
-You will find the image in **(your_home_dir)/Pd/img/**.
->You can change this behavior by editing the value of "img_folder" variable in the first lines of the main plugin file.
+You will find the image in <your home dir>/Pd/img/.
+>You can change this behavior by editing the value of "img_folder" variable in the first lines of the main plugin file (shotcanvas-plugin.tcl).
 
-An **SVG** file is also created.
+Also a **SVG** file is created, you can find it in the same directory.
 >NB, **the SVG file is a simple container** of the png image, it does not contain paths, shape or other vector elements.
 
 If you have installed ***inkscape***, it automatically will open with your svg file loaded inside.
->you can change program by editing the value of "**edit_program**" variable in the first lines of the main plugin file.
+>you can change program by editing the value of "**edit_program**" variable in the first lines of the main plugin file (shotcanvas-plugin.tcl).
 
 CREATE BACKGROUND (*import PNG*)
 ------------------------------
@@ -46,7 +46,7 @@ Install
 -------
 
 Copy [shotcanvas-plugin.tcl](shotcanvas-plugin.tcl) and [shotcanvas-svgcontainer.tcl](shotcanvas-svgcontainer.tcl) to <your home directory>/pd-externals.
-> this may change so refer to the PD documentation.
+> this may change, please, refer to the PD documentation.
 
 basically:
 1) shotcanvas-plugin.tcl and shotcanvas-svgcontainer.tcl must be on the same level in a directory where pd looks
