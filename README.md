@@ -42,14 +42,10 @@ The image will be loaded only under these conditions:
 - Its name must be **identical to the pd file name (except in the extension)**
 - The image file must be in the **(your_home_dir)/Pd/img/** folder (you can change this..)
 
-Programming language
---------------------
-tcl TK
-
 Install
 -------
 
-Copy **shotcanvas-plugin.tcl** and **shotcanvas-svgcontainer.tcl** to (your home directory)/pd-externals.
+Copy **[shotcanvas-plugin.tcl](shotcanvas-plugin.tcl)** and **[shotcanvas-svgcontainer.tcl]** to (your home directory)/pd-externals.
 > this may change so refer to the PD documentation.
 
 basically:
