@@ -57,4 +57,4 @@ Lazzaro Nicolò Ciccolellla
 
 Reference:
 - [puredata](https://puredata.info/)
-- [puredata plugin docs][https://puredata.info/docs/guiplugins/]
+- [puredata plugin docs](https://puredata.info/docs/guiplugins/)
