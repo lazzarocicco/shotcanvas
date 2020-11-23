@@ -14,7 +14,7 @@ Plugin features and uses
 - CREATE PNG (export png)
 - CREATE BACKGROUND (import png)
 
-CREATE PNG (*import PNG*)
+CREATE PNG (*export PNG*)
 -------------------------
 > Create png with all the content of a focused patchwindow (only the canvas, not the frame) 
 
