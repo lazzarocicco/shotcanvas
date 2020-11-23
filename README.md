@@ -1,7 +1,7 @@
 shotcanvas
 ==========
 
-Puredata plugin. This plugin is designed to use a png image as background of a pd patch. You can also create a snapshot of your patch.
+Puredata plugin. This plugin is designed to use a PNG image as background of a pd patch. You can also create a PNG snapshot of your patch.
 
 plugin features and uses
 -----------------
@@ -11,8 +11,8 @@ plugin features and uses
 Dependency: **IMG**
 > The plugin is designed to work with decent qualityes images, so the IMG library of tk is required in your system (debian/ubuntu: libtk-img).
 
-CREATE PNG
-----------
+CREATE PNG (*import PNG*)
+-------------------------
 > Create png with all the content of a focused patchwindow (only the canvas, not the frame) 
 
 CanvasIE places a menu item (**shotcanvas**) in the main pd menu (it is active only in patchwindows).
