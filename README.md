@@ -1,4 +1,4 @@
-![sreendhot](banner_shotcanvas.png)
+![sreendhot](banner_shotcanvas_medium.png)
 
 shotcanvas
 ==========
