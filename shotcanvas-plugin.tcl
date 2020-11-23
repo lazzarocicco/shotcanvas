@@ -6,6 +6,8 @@ package require Tcl 8.5
 package require Tk
 package require pdwindow 0.1
 package require Img
+
+## shotcanvas-svgcontainer.tcl contain a proc that pus the SVG skeleton inside this script 
 source $::current_plugin_loadpath/shotcanvas-svgcontainer.tcl
 
 
