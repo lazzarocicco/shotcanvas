@@ -17,7 +17,7 @@ CREATE PNG (*import PNG*)
 -------------------------
 > Create png with all the content of a focused patchwindow (only the canvas, not the frame) 
 
-CanvasIE places a menu item (**shotcanvas**) in the main pd menu (it is active only in patchwindows).
+Shotcanvas places a menu item (**shotcanvas**) in the main pd menu (it is active only in patchwindows).
 Clicking on "shotcanvas" you export an image (**png**) of the patch with everything are on it, objects, wires etc. as it appears to your eyes  (the patch can be in edit mode or not).
 
 You will find the image in **(your_home_dir)/Pd/img/**.
