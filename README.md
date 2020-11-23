@@ -54,3 +54,7 @@ Author
 Lazzaro Nicolò Ciccolellla
 **shotcanvas** is *open source software*, see: [LICENSE](LICENSE)
 >Have fan
+
+Reference:
+- [puredata](https://puredata.info/)
+- [puredata plugin docs][https://puredata.info/docs/guiplugins/]
