@@ -52,5 +52,5 @@ basically:
 Author
 -----
 Lazzaro Nicolò Ciccolellla
-**CanvasIE** is *open source software*, see: [LICENSE](LICENSE)
+**shotcanvas** is *open source software*, see: [LICENSE](LICENSE)
 >Have fan
