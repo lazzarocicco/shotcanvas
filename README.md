@@ -6,8 +6,8 @@ shotcanvas
 Puredata plugin. This plugin is designed to use a PNG image as background of a pd patch. You can also create a PNG snapshot of your patch.
 Programming language: Tcl/Tk.
 
-Dependency: **IMG**
-> The plugin is designed to work with decent qualityes images, so the IMG library of tk is required in your system (debian/ubuntu: libtk-img).
+Dependency: Img (a Tk extension library) 
+> The plugin is designed to work with decent qualityes images, so the [Tk Img library](http://tkimg.sourceforge.net/) must be in your system.
 
 Plugin features and uses
 -----------------
