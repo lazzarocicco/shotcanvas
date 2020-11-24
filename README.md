@@ -11,11 +11,11 @@ Dependency: Img (a Tk extension library)
 
 Plugin features:
 
-- CREATE PNG (save png)
-- CREATE BACKGROUND (load png)
+- save png
+- load png
 
-CREATE PNG (*save PNG*)
--------------------------
+save png
+--------
 > Create a **PNG** screnshot of a focused patchwindow (only the canvas, not the frame) 
 
 A new menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
@@ -30,8 +30,8 @@ Also a **SVG** file is created, you can find it in the same directory.
 Finally the procedure opens the SVG file with **inkscape** (you must have it already installed).
 >you can change program by setting the value of "**edit_program**" variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
-CREATE BACKGROUND (*load PNG*)
-------------------------------
+load png (as background)
+------------------------
 >Automatically load a **PNG** image as background into the **patchwindow canvas** with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
 
 NB The image **is not loaded ON a patchwindow canvas like a graphic (or standard) pd object**.
