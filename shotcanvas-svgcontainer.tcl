@@ -1,5 +1,6 @@
 ##provide the SVG skeleton for embedding the generated png image 
 ##all the programming is in the file shotcanvas-plugin.tcl
+
 proc svg_container {width height imagefile} {
 set ::XML "<?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <svg
