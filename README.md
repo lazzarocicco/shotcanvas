@@ -64,7 +64,7 @@ Lazzaro Nicolò Ciccolellla
 
 License
 -------
-*shotcanvas* is *open source software*, see: [LICENSE](LICENSE)
+*shotcanvas* is *open source software*: [LICENSE](LICENSE)
 
 >Have fun
 
