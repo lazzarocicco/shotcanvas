@@ -19,7 +19,7 @@ CREATE PNG (*save PNG*)
 > Create a **PNG** screnshot of a focused patchwindow (only the canvas, not the frame) 
 
 A new menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
-Clicking on "shotcanvas" you screenshot the focused patch. Screenshot in **PNG** format include everything in the patch: objects, wires etc. as you see it (the patch can be in edit mode or not).
+Clicking on "shotcanvas" you screenshot the focused patch. The screenshot (in **PNG** format) include everything in the patch: objects, wires etc. as you see it (the patch can be in edit mode or not).
 
 You will find the screenshot in <your home dir>/Pd/img/.
 >You can change this behavior by editing the value of "img_folder" variable on the top of the main plugin file (shotcanvas-plugin.tcl).
