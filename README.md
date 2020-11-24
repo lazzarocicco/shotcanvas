@@ -42,7 +42,9 @@ The image will be loaded only under these conditions:
 - must be a **PNG**
 - Its name must be **identical to the pd file name (except in the extension)**
 - The image file must be in the **<your_home_dir>/Pd/img/** folder.
-example: if tou wanth a background for mypatch.pd your background must be <your_home_dir>/Pd/img/mypatch.png
+
+> Example: if tou wanth a background for mypatch.pd your background must be <your_home_dir>/Pd/img/mypatch.png
+> "mypatch.pd" can be in any folder but "mypatch.png" must be in <your_home_dir>/Pd/img/. You can change <your_home_dir>/Pd/img/ with any other folder setting
 
 Install
 -------
