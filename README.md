@@ -32,7 +32,7 @@ Finally the procedure opens the SVG file with **inkscape** (you must have it alr
 
 load png (as background)
 ------------------------
->Automatically load a **PNG** image as background into the **patchwindow canvas** with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
+>Automatically load a **PNG** image as **patchwindow canvas** background with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
 
 NB The image **is not loaded ON a patchwindow canvas like a graphic (or standard) pd object**.
 
