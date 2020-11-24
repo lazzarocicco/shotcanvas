@@ -66,7 +66,7 @@ License
 -------
 *shotcanvas* is *open source software*, see: [LICENSE](LICENSE)
 
->Have fan
+>Have fun
 
 Reference:
 ----------
