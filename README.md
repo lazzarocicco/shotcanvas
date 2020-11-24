@@ -9,8 +9,8 @@ Programming language: Tcl/Tk.
 Dependency: Img (a Tk extension library) 
 > The plugin is designed to work with decent qualityes images, so the [Tk Img library](http://tkimg.sourceforge.net/) must be in your system.
 
-Plugin features and uses
------------------
+Plugin features:
+
 - CREATE PNG (save png)
 - CREATE BACKGROUND (load png)
 
@@ -44,7 +44,9 @@ The image will be loaded only under these conditions:
 - The image file must be in the **\<your_home_dir>/Pd/img/** folder.
 
 > Example: if tou wanth a background for mypatch.pd your background must be \<your_home_dir>/Pd/img/mypatch.png
-> "mypatch.pd" can be in any folder but "mypatch.png" must be in \<your_home_dir>/Pd/img/. You can change \<your_home_dir>/Pd/img/ with any other folder, setting the img_folder variable on top of the main plugin file (shotcanvas-plugin.tcl).
+>
+> "mypatch.pd" can be in any folder but "mypatch.png" must be in \<your_home_dir>/Pd/img/.
+> You can change \<your_home_dir>/Pd/img/ with any other folder, setting the img_folder variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
 Install
 -------
