@@ -49,7 +49,7 @@ The image will be loaded only under these conditions:
 Install
 -------
 
-Copy [shotcanvas-plugin.tcl](shotcanvas-plugin.tcl) and [shotcanvas-svgcontainer.tcl](shotcanvas-svgcontainer.tcl) to <your home directory>/pd-externals.
+Copy [shotcanvas-plugin.tcl](shotcanvas-plugin.tcl) and [shotcanvas-svgcontainer.tcl](shotcanvas-svgcontainer.tcl) to \<your home directory>/pd-externals.
 > this may change, please, refer to the PD documentation.
 
 basically:
