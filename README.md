@@ -18,29 +18,31 @@ CREATE PNG (*export PNG*)
 -------------------------
 > Create a **PNG** screnshot of a focused patchwindow (only the canvas, not the frame) 
 
-Installing shotcanvas a menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
-Clicking on "shotcanvas" you export a (**png**) image of the patch with everything are on it, objects, wires etc. as it appears to your eyes  (the patch can be in edit mode or not).
+A new menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
+Clicking on "shotcanvas" you screenshot the focused patch. Screenshot in **PNG** format include everything in the patch: objects, wires etc. as you see it (the patch can be in edit mode or not).
 
-You will find the image in <your home dir>/Pd/img/.
->You can change this behavior by editing the value of "img_folder" variable in the first lines of the main plugin file (shotcanvas-plugin.tcl).
+You will find the screenshot in <your home dir>/Pd/img/.
+>You can change this behavior by editing the value of "img_folder" variable on the top of the main plugin file (shotcanvas-plugin.tcl).
 
 Also a **SVG** file is created, you can find it in the same directory.
->NB, **the SVG file is a simple container** of the png image, it does not contain paths, shape or other vector elements.
+>NB, **the SVG file is a simple container** of the png image, it does not contain paths, shapes or other vector elements.
 
-If you have installed ***inkscape***, it automatically will open with your svg file loaded inside.
->you can change program by editing the value of "**edit_program**" variable in the first lines of the main plugin file (shotcanvas-plugin.tcl).
+Finally the procedure opens the SVG file with **inkscape** (you must have it already installed).
+>you can change program by editing the value of "**edit_program**" variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
 CREATE BACKGROUND (*import PNG*)
 ------------------------------
->Loads a **PNG** image into the **patchwindow canvas** starting with offset 0 0.
-The upper/left corner of the image will be in the upper/left corner of the patch canvas.
+>Loads a **PNG** image as background into the **patchwindow canvas** with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
 
-NB The image **is not loaded ON a patchwindow canvas like a graphic object** (as example: like [image] object from pd-extended) but it become the canvas background, so once imported the image you will not be able to change its position or all other its properties. When you don't want to see it animore, simply rename or delete the image.
+NB The image **is not loaded ON a patchwindow canvas like a graphic (or standard) pd object**.
+
+The image become the canvas background, so once imported you cant access at all its properties. If you don't want to see it animore, simply rename or delete the image.
 
 The image will be loaded only under these conditions:
 - must be a **PNG**
 - Its name must be **identical to the pd file name (except in the extension)**
-- The image file must be in the **(your_home_dir)/Pd/img/** folder (you can change this..)
+- The image file must be in the **<your_home_dir>/Pd/img/** folder.
+example: if tou wanth a background for mypatch.pd your background must be <your_home_dir>/Pd/img/mypatch.png
 
 Install
 -------
