@@ -44,7 +44,7 @@ The image will be loaded only under these conditions:
 - The image file must be in the **<your_home_dir>/Pd/img/** folder.
 
 > Example: if tou wanth a background for mypatch.pd your background must be <your_home_dir>/Pd/img/mypatch.png
-> "mypatch.pd" can be in any folder but "mypatch.png" must be in <your_home_dir>/Pd/img/. You can change <your_home_dir>/Pd/img/ with any other folder setting
+> "mypatch.pd" can be in any folder but "mypatch.png" must be in <your_home_dir>/Pd/img/. You can change <your_home_dir>/Pd/img/ with any other folder setting img_folder variable. Default is: "$env(HOME)/Pd/img".
 
 Install
 -------
