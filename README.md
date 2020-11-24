@@ -21,30 +21,30 @@ CREATE PNG (*save PNG*)
 A new menu item (**shotcanvas**) appear in the main pd menu (it is active only in patchwindows).
 Click on that button to create a screenshot of the focused patch. The screenshot (in **PNG** format) include everything in the patch: objects, wires etc. as you see it (the patch can be in edit mode or not).
 
-You will find the screenshot in <your home dir>/Pd/img/.
+You will find the screenshot in \<your home dir>/Pd/img/.
 >You can change this behavior by editing the value of "img_folder" variable on the top of the main plugin file (shotcanvas-plugin.tcl).
 
 Also a **SVG** file is created, you can find it in the same directory.
 >NB, **the SVG file is a simple container** of the png image, it does not contain paths, shapes or other vector elements.
 
 Finally the procedure opens the SVG file with **inkscape** (you must have it already installed).
->you can change program by editing the value of "**edit_program**" variable on top of the main plugin file (shotcanvas-plugin.tcl).
+>you can change program by setting the value of "**edit_program**" variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
 CREATE BACKGROUND (*load PNG*)
 ------------------------------
->Loads a **PNG** image as background into the **patchwindow canvas** with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
+>Automatically load a **PNG** image as background into the **patchwindow canvas** with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
 
 NB The image **is not loaded ON a patchwindow canvas like a graphic (or standard) pd object**.
 
-The image become the canvas background, so once imported you cant access at all its properties. If you don't want to see it animore, simply rename or delete the image.
+The image become the canvas background, so once imported you can't access at all its properties. If you don't want to see it animore, simply rename or delete the image.
 
 The image will be loaded only under these conditions:
 - must be a **PNG**
 - Its name must be **identical to the pd file name (except in the extension)**
-- The image file must be in the **<your_home_dir>/Pd/img/** folder.
+- The image file must be in the **\<your_home_dir>/Pd/img/** folder.
 
-> Example: if tou wanth a background for mypatch.pd your background must be <your_home_dir>/Pd/img/mypatch.png
-> "mypatch.pd" can be in any folder but "mypatch.png" must be in <your_home_dir>/Pd/img/. You can change <your_home_dir>/Pd/img/ with any other folder setting img_folder variable. Default is: "$env(HOME)/Pd/img".
+> Example: if tou wanth a background for mypatch.pd your background must be \<your_home_dir>/Pd/img/mypatch.png
+> "mypatch.pd" can be in any folder but "mypatch.png" must be in \<your_home_dir>/Pd/img/. You can change \<your_home_dir>/Pd/img/ with any other folder, setting the img_folder variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
 Install
 -------
