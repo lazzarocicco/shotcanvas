@@ -1,4 +1,4 @@
-# META NAME canvasIE
+# META NAME shotcanvas
 # META DESCRIPTION canvas import export:  load a png as patch background, export patch as png, save an svg file embedding that image 
 # META AUTHOR <Lazzaro Ciccolella> lazzarocicco@gmail.com
 
