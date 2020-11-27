@@ -10,7 +10,6 @@ package require Img
 ## shotcanvas-svgcontainer.tcl contain a proc that pus the SVG skeleton inside this script 
 source $::current_plugin_loadpath/shotcanvas-svgcontainer.tcl
 
-
 ## per user editable vars
 
 ## folder where the plugin/user load/save images (images for use with this plugin)
@@ -22,6 +21,11 @@ set edit_program inkscape
 
 ## END per user editable vars
 
+puts "----------shotcanvas-plugin---------"
+puts "shotcanvas-plugin is a pure data (pd) plugin."
+puts "lazzaro Ciccolella 2020 marrongiallo.github.io"
+puts "README file for instructions:  https://github.com/marrongiallo/shotcanvas"
+puts "----------shotcanvas-plugin---------"
 
 ##list of patchwindows active
 set caricati {}
