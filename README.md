@@ -3,7 +3,7 @@
 shotcanvas
 ==========
 
-Puredata plugin. This plugin is designed to use a PNG image as background of a pd patch. You can also create a PNG snapshot of your patch.
+Puredata plugin. Create a PNG snapshot of your patch.
 Programming language: Tcl/Tk.
 
 Dependency: Img (a Tk extension library) 
@@ -12,7 +12,6 @@ Dependency: Img (a Tk extension library)
 Plugin features:
 
 - save png
-- load png
 
 save png
 --------
@@ -29,24 +28,6 @@ Also a **SVG** file is created, you can find it in the same directory.
 
 Finally the procedure opens the SVG file with **inkscape** (you must have it already installed).
 >you can change program by setting the value of "**edit_program**" variable on top of the main plugin file (shotcanvas-plugin.tcl).
-
-load png (as background)
-------------------------
->Automatically load a **PNG** image as **patchwindow canvas** background with offset 0 0 (the upper/left corner of the image will be in the upper/left corner of the patch canvas).
-
-NB The image **is not loaded ON a patchwindow canvas like a graphic (or standard) pd object**.
-
-The image become the canvas background, so once imported you can't access at all its properties. If you don't want to see it animore, simply rename or delete the image.
-
-The image will be loaded only under these conditions:
-- must be a **PNG**
-- Its name must be **identical to the pd file name (except in the extension)**
-- The image file must be in the **\<your_home_dir>/Pd/img/** folder.
-
-> Example: if tou wanth a background for mypatch.pd your background must be \<your_home_dir>/Pd/img/mypatch.png
->
-> "mypatch.pd" can be in any folder but "mypatch.png" must be in \<your_home_dir>/Pd/img/.
-> You can change \<your_home_dir>/Pd/img/ with any other folder, setting the img_folder variable on top of the main plugin file (shotcanvas-plugin.tcl).
 
 Install
 -------

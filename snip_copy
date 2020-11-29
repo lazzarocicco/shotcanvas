@@ -1,5 +1,0 @@
-puts "----------glob-plugin---------"
-puts "glob-plugin is a pure data (pd) plugin."
-puts "lazzaro Ciccolella 2020 marrongiallo.github.io"
-puts "to use me open help -> browser -> externals -> glob_request-help.pd"
-puts "----------glob-plugin---------"
