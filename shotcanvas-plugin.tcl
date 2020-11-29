@@ -1,18 +1,26 @@
-# META NAME create_entrymenu (create_entrymenu.tcl)
+# META NAME shotcanvas (shotcanvas-plugin.tcl)
 # META DESCRIPTION load a png as patch background 
 # META AUTHOR <Lazzaro Ciccolella> lazzarocicco@gmail.com
+
+#    from README file
+# 1. Creates a PNG snapshot of canvas (What you see in your pd patch).
+# 2. Creates a SVG file that embed the png image you created.
+# 3. Automatically loads a png with the same name as the .pd file and places it in your patch as a background.
+#
 
 package require Tcl 8.5
 package require Tk
 package require pdwindow 0.1
 package require Img
 
-puts "- create_entrymenu-plugin ---------"
+puts "- shotcanvas-plugin ---------"
 puts "  pure data (pd) plugin - lazzaro Ciccolella 2020 marrongiallo.github.io"
-puts "  README https://github.com/marrongiallo/create_entrymenu"
+puts "  README https://github.com/marrongiallo/shotcanvas"
 puts "-------------------------"
-## shotcanvas-svgcontainer.tcl contain a proc that pus the SVG skeleton inside this script 
+
+## shotcanvas-svgcontainer.tcl contain a proc that push the SVG skeleton inside this script 
 source $::current_plugin_loadpath/shotcanvas-svgcontainer.tcl
+
 ##if you have gimp or inkscape installed it should open when the image creation is complete
 ##set edit_program gimp
 set edit_program inkscape
@@ -36,8 +44,6 @@ proc crea_svg {mytop image_to_contain file_to_save_svg} {
         puts "hai creato il file svg: $file_to_save_svg"
         exec $::Shotc::edit_program $file_to_save_svg  &
 }
-
-
 
 proc shot {} {
 	set object $::Shotc::current_focused
@@ -66,8 +72,21 @@ proc shot {} {
 
 proc en_dis_item_menu {state msg} {
 	.menubar.shot entryconfigure 0 -state $state -label $msg
-puts "$state - $msg"
+	puts "$state - $msg"
 }
+
+proc update_img {filename rndId} {
+        image create photo $rndId -file $filename
+}
+
+proc create_bg {object imgid} {
+        if {[file exists $::Shotc::img_folder/[file root $::windowname($object)].png]} {
+                ::update_img $::Shotc::img_folder/[file root $::windowname($object)].png $imgid
+                $object.c create image 0 0 -anchor nw -image $imgid
+        }
+}
+
+bind PatchWindow <<Loaded>>  {+create_bg %W "w[expr int([expr rand()* 50000000])]imgid"}
 bind PdWindow <FocusIn>  {+en_dis_item_menu "disabled" "only for patch"}
 bind PatchWindow <FocusIn>  {+set ::Shotc::current_focused %W;en_dis_item_menu "normal" "crea png"}
 
