@@ -6,7 +6,9 @@ shotcanvas
 Puredata plugin
 ----------------
 
-Create a PNG snapshot of canvas (What you see in your pd patch), creates a svg file that only embed the png image you created, there are no shapes, paths or other vector elements. Automatically loads a png with the same name as the pd file and places it in your patch as a background.
+1. Creates a PNG snapshot of canvas (What you see in your pd patch).
+2. Creates a SVG file that embed the png image you created.
+3. Automatically loads a png with the same name as the .pd file and places it in your patch as a background.
 
 Programming language: Tcl/Tk.
 
